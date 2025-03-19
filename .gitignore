@@ -1,5 +1,9 @@
 # Python generated files
 __pycache__/
+migrations/
 
 # Virtual environments
 venv/
+
+# Databases
+*.sqlite3
