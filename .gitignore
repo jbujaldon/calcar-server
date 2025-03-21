@@ -7,3 +7,6 @@ venv/
 
 # Databases
 *.sqlite3
+
+# Environment variables
+.env
