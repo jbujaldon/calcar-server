@@ -9,6 +9,7 @@ class User(AbstractUser):
     email = models.EmailField(_('email address'), unique=True)
     first_name = models.CharField(max_length=150, null=False, blank=False)
     last_name = models.CharField(max_length=150, null=False, blank=False)
+    has_onboarding_completed = models.BooleanField(null=False, default=False)
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = []

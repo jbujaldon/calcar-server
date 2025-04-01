@@ -5,7 +5,7 @@ from users.models import User
 
 class ApiUserAdmin(UserAdmin):
     model = User
-    list_display = ('email', 'first_name', 'last_name', 'is_staff', 'is_active')
+    list_display = ('email', 'first_name', 'last_name', 'is_staff', 'is_active', 'has_onboarding_completed')
     list_filter = ('is_staff', 'is_active')
     fieldsets = (
         (None, {'fields': ('email', 'password')}),
